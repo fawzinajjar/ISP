@@ -1,0 +1,12 @@
+{
+    "database": 
+    {
+        "SQLITE3": {
+            "PATH": "./src/db/storage/.sqlite3"
+        }
+    },
+    "application":
+    {
+        "PORT" : "3000"
+    }
+}
