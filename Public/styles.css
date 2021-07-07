@@ -1,3 +1,28 @@
-.s {
-    color: brown;
+body {
+    background-color:  #f8d64f;
+}
+
+@font-face {
+    font-family: 'Rancho';
+    src: url(fonts/Rancho-Regular);
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Yellowtail';
+    src: url(fonts/Yellowtail-Regular);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Rancho';
+    font-weight: 900;
+
+}
+
+input {
+    background: transparent;
+    color: white;
+    font-family: 'Rancho';
+    border: none;
 }

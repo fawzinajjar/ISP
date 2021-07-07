@@ -6,13 +6,20 @@ const db = require("../src/db/index");
 
 // Public Files
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Public/"));
+  res.sendFile(path.join(__dirname, "../Public/index.html"));
 });
 app.get("/main.js", (req, res) => {
   res.sendFile(path.join(__dirname, "../Public/main.js"));
 });
 app.get("/styles.css", (req, res) => {
   res.sendFile(path.join(__dirname, "../Public/styles.css"));
+});
+//Fonts
+app.get("/fonts/Yellowtail-Regular", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Public/fonts/Yellowtail-Regular.ttf"))
+});
+app.get("/fonts/Rancho-Regular", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Public/fonts/Rancho-Regular.ttf"))
 });
 
 // API BACKEND
@@ -30,5 +37,5 @@ const open = require('open');
 const PORT = config.application.PORT || 3000;
 app.listen(PORT, function () {
   console.log(`Server Started on PORT : ${PORT}`);
-  //open('http://localhost:3000');
+  open('http://localhost:3000');
 });
